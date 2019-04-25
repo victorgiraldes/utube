@@ -2,6 +2,7 @@
   "name": "utube",
   "private": true,
   "dependencies": {
+    "jquery": "^3.4.0",
     "materialize-css": "^1.0.0"
   }
 }

@@ -5,7 +5,10 @@
   <% @videos.each do |video| %>
     <h4><%= video.name %></h4>
     <h5><%= video.description %></h5>
-    <iframe width="560" height="315" src="<%= video.url %>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <div class="responsive-video">
+      <iframe width="560" height="315" src="<%= video.url %>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <h6><%= video.tags %></h6>
   <% end %>
 </div>
 
