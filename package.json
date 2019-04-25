@@ -1,0 +1,7 @@
+{
+  "name": "utube",
+  "private": true,
+  "dependencies": {
+    "materialize-css": "^1.0.0"
+  }
+}
