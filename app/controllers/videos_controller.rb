@@ -1,11 +1,10 @@
 class VideosController < ApplicationController
   before_action :authenticate_user!
   before_action :set_video, only: [:show, :edit, :update, :destroy]
-
+  before_action :set_user
   # GET /videos
   # GET /videos.json
   def index
-    set_user
     @videos = current_user.videos
     # return @videos
   end
@@ -13,7 +12,6 @@ class VideosController < ApplicationController
   # GET /videos/1
   # GET /videos/1.json
   def show
-    set_user
     @video = current_user.videos.find(params[:id])
   end
 
@@ -24,6 +22,7 @@ class VideosController < ApplicationController
 
   # GET /videos/1/edit
   def edit
+    
   end
 
   # POST /videos
