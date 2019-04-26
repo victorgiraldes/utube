@@ -5,13 +5,16 @@ class VideosController < ApplicationController
   # GET /videos
   # GET /videos.json
   def index
-    @videos = Video.all
-    @videos = current_user.id = @video
+    set_user
+    @videos = current_user.videos
+    # return @videos
   end
 
   # GET /videos/1
   # GET /videos/1.json
   def show
+    set_user
+    @video = current_user.videos.find(params[:id])
   end
 
   # GET /videos/new
@@ -64,6 +67,10 @@ class VideosController < ApplicationController
   end
 
   private
+
+    def set_user
+      @user = current_user
+    end
     # Use callbacks to share common setup or constraints between actions.
     def set_video
       @video = Video.find(params[:id])
