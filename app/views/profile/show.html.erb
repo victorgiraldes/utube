@@ -1,0 +1,8 @@
+<%= render :partial => "shared/navbar" %>
+
+<div class="container">
+  <h3><%= link_to "#{@user.name}", edit_profile_path(current_user.id) %></h3>
+  <h6><%= @user.email %></h6>
+</div>
+
+<%= render :partial => "shared/footer" %>
