@@ -26,3 +26,10 @@
 <%= link_to 'Back', videos_path %>
 
 <%= render :partial => "shared/footer"%>
+
+<script>
+     $(function(){
+       var notice = "<%= flash[:notice] %>"
+       $.notify(notice, "success")
+     })
+</script>

@@ -3,6 +3,7 @@
   "private": true,
   "dependencies": {
     "jquery": "^3.4.0",
-    "materialize-css": "^1.0.0"
+    "materialize-css": "^1.0.0",
+    "notifyjs": "^3.0.0"
   }
 }

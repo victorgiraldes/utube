@@ -13,6 +13,7 @@
 //= require rails-ujs
 //= require jquery
 //= require materialize-css/dist/js/materialize
+//= require notifyjs/dist/notify
 //= require activestorage
 //= require turbolinks
 //= require_tree .

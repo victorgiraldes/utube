@@ -11,3 +11,8 @@ materialize-css@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/materialize-css/-/materialize-css-1.0.0.tgz#8d5db1c4a81c6d65f3b2e2ca83a8e08daa24d1be"
   integrity sha512-4/oecXl8y/1i8RDZvyvwAICyqwNoKU4or5uf8uoAd74k76KzZ0Llym4zhJ5lLNUskcqjO0AuMcvNyDkpz8Z6zw==
+
+notifyjs@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/notifyjs/-/notifyjs-3.0.0.tgz#7418c9d6c0533aebaa643414214af53b521d1b28"
+  integrity sha1-dBjJ1sBTOuuqZDQUIUr1O1IdGyg=

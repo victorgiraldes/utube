@@ -1,8 +1,11 @@
 <%= form_with(model: video, local: true) do |form| %>
   <% if video.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(video.errors.count, "error") %> prohibited this video from being saved:</h2>
-
+    <div class="error_explanation">
+      <script type="text/javascript">
+        $(function(){
+          $.notify("<%= pluralize(video.errors.count, "error") %> prohibited this video from being saved:", "error")
+        })
+      </script>    
       <ul>
       <% video.errors.full_messages.each do |message| %>
         <li><%= message %></li>
@@ -34,4 +37,5 @@
   <div class="actions">
     <%= form.submit %>
   </div>
+
 <% end %>

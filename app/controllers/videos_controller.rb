@@ -1,5 +1,5 @@
 class VideosController < ApplicationController
-  before_action :authenticate_user!
+  before_action :authenticate_user!, except: [:create]
   before_action :set_video, only: [:show, :edit, :update, :destroy]
   before_action :set_user
   # GET /videos
@@ -22,21 +22,20 @@ class VideosController < ApplicationController
 
   # GET /videos/1/edit
   def edit
-    
+
   end
 
   # POST /videos
   # POST /videos.json
   def create
     @video = Video.new(video_params)
+    @video.user_id = current_user.id
 
     respond_to do |format|
       if @video.save
         format.html { redirect_to @video, notice: 'Video was successfully created.' }
-        format.json { render :show, status: :created, location: @video }
       else
         format.html { render :new }
-        format.json { render json: @video.errors, status: :unprocessable_entity }
       end
     end
   end
@@ -77,6 +76,6 @@ class VideosController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def video_params
-      params.require(:video).permit(:url, :name, :description, :tags)
+      params.require(:video).permit(:url, :name, :description, :tags, :thumb)
     end
 end

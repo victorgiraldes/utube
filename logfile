@@ -1,0 +1,8 @@
+2019-04-27 12:35:23.839 -04 [1424] LOG:  listening on IPv6 address "::1", port 5432
+2019-04-27 12:35:23.839 -04 [1424] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2019-04-27 12:35:23.840 -04 [1424] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2019-04-27 12:35:23.882 -04 [1426] LOG:  database system was shut down at 2019-04-26 07:40:51 -04
+2019-04-27 12:35:23.900 -04 [1424] LOG:  database system is ready to accept connections
+2019-04-27 12:35:34.924 -04 [1451] FATAL:  role "victor" does not exist
+2019-04-27 12:36:01.153 -04 [1455] FATAL:  role "victor" does not exist
+2019-04-27 12:36:02.215 -04 [1456] FATAL:  role "victor" does not exist
